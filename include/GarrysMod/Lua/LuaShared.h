@@ -47,7 +47,7 @@ namespace GarrysMod
 		{
 			~LuaFile();
 			int time;
-#ifdef WIN32
+#ifdef _WIN32
 			std::string name;
 			std::string source;
 			std::string contents;
@@ -57,7 +57,7 @@ namespace GarrysMod
 			const char *contents;
 #endif
 			Bootil::AutoBuffer compressed;
-#ifndef WIN32
+#ifndef _WIN32
 			int random; // Unknown thing
 #endif
 			unsigned int timesloadedserver;
