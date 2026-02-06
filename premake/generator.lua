@@ -99,7 +99,7 @@ function CreateWorkspace(config)
 			runtime("Release")
 
 		filter("configurations:Release")
-			linktimeoptimization("On")
+			flags("LinkTimeOptimization")
 			optimize("Full")
 			symbols("Off")
 			defines("NDEBUG")
